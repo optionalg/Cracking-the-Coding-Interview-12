@@ -27,3 +27,17 @@ def remove_duplicate(string):
     return ''.join(set(string))
 
 print (remove_duplicate(string2))
+
+# working 2: what we can do is we can use the find function to see if a character from the given string is in our result string. And if it is in our result string then we can skip it, or else we concatanate the character to the result
+
+def remove_duplicates(lis):
+    result_string = ''
+    a = ''
+    b = ''
+    for character in lis:
+        if not character in result_string:
+            result_string = result_string + character
+    return result_string
+
+sa = 'samman'
+print (remove_duplicates(sa))
