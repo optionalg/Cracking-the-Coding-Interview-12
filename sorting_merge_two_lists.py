@@ -37,7 +37,12 @@ def merge(lisA, lisB):
         j -= 1
         k -= 1
 
-lisa = [2,4,6,8,0,0,0,0]
-lisb = [1,3,5,7]
+lisa = [0,0]
+lisb = [3]
 merge(lisa, lisb)
 print (lisa)
+# test cases ->
+# empty lists
+# one empty one working - 2 cases
+# both normal
+# unsorted lists
